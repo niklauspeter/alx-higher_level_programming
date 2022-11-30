@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inclde "lists.h"
+#include "lists.h"
 
 /**
  * check_cycle - checks if a singly linked list has a cycle within
@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 	listint_t *head;
 	listint_t *tail;
 
-	if (list == null)
+	if (list == NULL)
 		return (0);
 
 	head = list;
