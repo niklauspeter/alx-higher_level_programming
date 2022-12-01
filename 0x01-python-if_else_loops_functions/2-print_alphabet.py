@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-import string
-
-for letter in string.ascii_lowercase:
-    print(letter, end = "")
+for character in range(97, 123):
+    print("{:c}".format(character), end='')
