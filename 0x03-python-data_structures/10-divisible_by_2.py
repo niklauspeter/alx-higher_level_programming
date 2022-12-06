@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
-    """functino finds all multiples of two in a list"""
-    if my_list == "":
-        return (None)
+    """function finds all multiples of two in a list"""
+    #if my_list == "":
+     #   return (None)
     
     multiples_list = []
     
