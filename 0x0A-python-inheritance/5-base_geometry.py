@@ -1,4 +1,4 @@
-#!/bin/bash/pyhton3
+#!/usr/bin/pyhton3
 
 """create empty class"""
 
