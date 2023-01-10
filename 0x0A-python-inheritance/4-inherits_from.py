@@ -5,11 +5,9 @@ class"""
 
 
 def inherits_from(obj, a_class):
-    """
+    """checks if object is instance of a class that inherited
     obj : the oject in question
     a_class: class being compared
     returns: true if obj inherited from class
     """
-    if type(obj) != a_class and isinstance(obj, a_class):
-        return True
-    return False
+    return type(obj) != a_class and isinstance(obj, a_class)
