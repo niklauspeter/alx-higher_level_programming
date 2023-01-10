@@ -2,10 +2,11 @@
 
 
 def is_same_class(obj, a_class):
-    """
-    function returns true if object
-    is exactly an instance of specified
-    class
+    """'''
+    function: is_same_class
+    obj: an object
+    a_class: a class
+    returns: Bool 
     """
 
     if type(obj) == a_class:
