@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 
 """function returns true if
 object is instance of class inherited from a specified
