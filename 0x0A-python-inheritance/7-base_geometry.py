@@ -2,15 +2,21 @@
 """
 raises errors
 """
+class BaseGeometry:
+    """Class with public instance methods"""
 
 def area(self):
     """raises exception"""
+
+
     raise Exception("area() is not implemented")
 
 def integer_validator(self, name, value):
-    if type(value) not "int":
-        Exception TypeError:
-        print("{} must be an integer".format(name))
+    """validates value"""
+    
+    
+    if type(value) is not int:
+        raise TypeError("{} must be an integer".format(name))
     if value <= 0:
-        Exception ValueError:
-        print("{} must be greater than 0".format(name))
+        raise ValueError("{} must be greater than 0".format(name))
+        
