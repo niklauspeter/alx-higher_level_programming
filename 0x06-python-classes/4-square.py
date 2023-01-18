@@ -8,7 +8,7 @@ class Square:
         """initialize a new square"""
 
         self.size = size
-    
+
     @property
     def size(self):
         """returns current area of the square"""
@@ -21,7 +21,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     def area(self):
         """returns area of the square"""
         return (self.__size * self.__size)
