@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Defines a file-appending function.(difference with write function is the mode when opening)"""
+"""Defines a file-appending function.
+(difference with write function is the mode when opening)"""
 
 
 def append_write(filename="", text=""):
