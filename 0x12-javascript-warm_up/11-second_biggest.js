@@ -15,7 +15,7 @@ if (Number(argNum) < 3) {
   console.log(arr[1]);
 }
 
-//this can also work
+// this can also work
 // const args = process.argv.slice(2).map(arg => parseInt(arg));
 
 // if (args.length < 2) {
