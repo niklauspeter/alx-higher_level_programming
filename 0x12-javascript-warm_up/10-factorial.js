@@ -1,18 +1,17 @@
 #!/usr/bin/node
-function factorial(a) {
-    if (isNaN(a)) {
-      return 1;
-    } else if (a <= 1) {
-      return 1;
-    } else {
-      return a * factorial(a - 1);
-    }
+function factorial (a) {
+  if (isNaN(a)) {
+    return 1;
+  } else if (a <= 1) {
+    return 1;
+  } else {
+    return a * factorial(a - 1);
   }
-  
-  const num = parseInt(process.argv[2]);
-  
-  console.log(factorial(num));
+}
 
+const num = parseInt(process.argv[2]);
+
+console.log(factorial(num));
 
 // function factorial (a) {
 //   let total = 1;
@@ -31,6 +30,3 @@ function factorial(a) {
 // } else {
 //   console.log(factorial(n));
 // }
-
-
-  
