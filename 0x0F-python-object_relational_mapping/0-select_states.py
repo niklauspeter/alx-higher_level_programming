@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Lists all states from the database hbtn_0e_0_usa.
-Usage include usernme password and database name
+Parameters: include username password and database name
 """
 import sys
 import MySQLdb
