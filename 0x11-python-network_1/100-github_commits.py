@@ -19,15 +19,31 @@ import sys
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+    # url = "https://api.github.com/repos/{}/{}/commits".format(
+    #     sys.argv[2], sys.argv[1])
+
+    # response = requests.get(url)
+    # commits = response.json()
+    # try:
+    #     for i in range(10):
+    #         print("{}: {}".format(
+    #             commits[i].get("sha"),
+    #             commits[i].get("commit").get("author").get("name")))
+    # except IndexError:
+    #     pass
+
+    repo_name = sys.argv[1]
+    owner_name = sys.argv[2]
+    url = f"https://api.github.com/repos/{owner_name}/{repo_name}/commits?author={owner_name}&per_page=10"
 
     response = requests.get(url)
+    if response.status_code != 200:
+        print(f"Error: {response.status_code}")
+        exit()
+
     commits = response.json()
-    try:
-        for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
-    except IndexError:
-        pass
+
+    for commit in commits:
+        sha = commit["sha"]
+        author = commit["commit"]["author"]["name"]
+        print(f"{sha}: {author}")
